@@ -1107,27 +1107,29 @@ section .StartNav {
   z-index: 999;
 }
 
-/*p1*/
-.MorePop-up .Popupbtn {
-  position: absolute;
-  background-color: transparent;
-  border: none;
-  color: aliceblue;
-  cursor: pointer;
-  right: 260px;
-  top: 5px;
-  font-size: 15px;
+/*p5*/
+#PBFive .MoreReadFive {
+  display: none;
 }
 
-#PBone_popup.PBone_popupAfter {
-  position: fixed;
+#PBFive.PBFiveAfter:hover .MoreReadFive {
   display: inline;
 }
 
-/*p2*/
-#PBtwo_popup.PBtwo_popupAfter {
-  position: fixed;
+#PBFive.PBFiveAfter:hover {
+  height: 630px;
+}
+
+#PBFive #LessReadFive {
+  display: none;
+}
+
+#PBFive.PBFiveAfter #LessReadFive {
   display: inline;
+}
+
+#PBFive.PBFiveAfter #ReadMoreFive {
+  display: none;
 }
 
 /*p20*/
@@ -1143,7 +1145,7 @@ section .StartNav {
   display: inline;
 }
 
-#OBTwnty #LessReadwntyten {
+#PBTwnty #LessReadwntyten {
   display: none;
 }
 
@@ -1222,7 +1224,7 @@ p {
 /*Bottom*/
 .MakrsDiv {
   position: absolute;
-  top: 320%;
+  top: 340%;
   left: 0;
   height: 350px;
   width: 100%;

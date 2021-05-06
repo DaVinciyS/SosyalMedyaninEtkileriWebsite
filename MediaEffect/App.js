@@ -7,19 +7,17 @@ function checkKeyPress(key){
   }
 
 }*/
-function TopScroll(){
-  window.scrollTo(0, 0);
+const SearchBar = document.getElementById('SearchInpt');
 
-  window.scroll({
-    top: 0, 
-    left: 0, 
-    behavior: 'smooth'
-  });
-}
+console.log(SearchBar);
 
-function MoreReadOne() {
-  var element = document.getElementById("");
-  element.classList.toggle("");
+SearchBar.addEventListener('keyup', (e) => {
+   console.log(e);
+});
+
+function MoreReadFive() {
+  var element = document.getElementById("PBFive");
+  element.classList.toggle("PBFiveAfter");
 }
 function MoreReadThree() {
   var element = document.getElementById("PBThird");
@@ -42,5 +40,4 @@ function MoreReadSxten(){
   element.classList.toggle("PBSxtenAfter");
 }
 
-TopScroll();
 
